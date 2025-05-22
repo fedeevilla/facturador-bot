@@ -1,3 +1,3 @@
 #!/bin/bash
 playwright install chromium
-python bot.py
+python main.py
