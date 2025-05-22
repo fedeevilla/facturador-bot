@@ -47,7 +47,7 @@ def verify():
     ensure_dir(output_path)
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=50, args=["--start-maximized"])
+        browser = p.chromium.launch(headless=True, slow_mo=50, args=["--start-maximized"])
         context = browser.new_context()
         page = context.new_page()
 
